@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2241f00bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="photos/logo1.jpeg" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Chandana Reddy</span><br>From India</h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photos/background1.jpeg.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A motivated Data Science Fresher looking to leverage my strong programming skills in Python, Java, and C, analytical aptitude. A punctual and hardworking student, very interested in learning new things and researching further into unknown information. Looking forward to adapting and learning from training in the new environment, meeting new friends, and working together with them as a team.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                            <li><span>Data Analyst</span><br>Data Visualization</li>
+                            <li><span>Computer Skills</span><br>Computer Skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Current</span><br>Intern at Pyramid Training</li>
+                            <li><span>2023-2024</span><br>Intern at Infosys</li>
+                            <li><span>2023-2024</span><br>Intern at Amazon</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Currently-2024</span><br>B-Tech at CMRIT, Hyderabad</li>
+                            <li><span>Intermediate-2022</span><br>Prathibha Junior College, MBNR</li>
+                            <li><span>SSC-2020</span><br>Akshara Concept High School, Jadcherla</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-item"> 
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Providing insights through data visualization, statistical analysis, and reporting</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service-item"> 
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>Designing and developing scalable web applications using the latest technologies</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service-item"> 
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Consulting</h2>
+                    <p>Offering consulting services for data-driven decision-making and process optimization</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work" onclick="toggleColor(this)">
+                    <img src="photos/work1.jpeg" alt="Work 1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A social media app involving front-end and back-end development with considerations for user experience and data security.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleColor(this)">
+                    <img src="photos/work2.jpeg" alt="Work 2">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A social media app involving front-end and back-end development with considerations for user experience and data security.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work center-item" onclick="toggleColor(this)">
+                    <img src="photos/work-3.jpeg" alt="Work 3">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A social media app involving front-end and back-end development with considerations for user experience and data security.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:Chandanapragaturi@gmail.com">Chandanapragaturi@gmail.com</a></p>
+                    <p><i class="fa-solid fa-address-book"></i><a href="tel:+9000656248">9000656248</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/reels/C_QjfVESqKA/?next=%2F" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/CodeWithHarry" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="photos/chandana resume(perfect).pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="entry.2005620554" placeholder="Your Name" required>
+                        <input type="email" name="entry.1045781291" placeholder="Your Email" required>
+                        <textarea name="entry.839337160" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <p id="form-response-message" style="color: green; font-weight: bold; display: none;"></p>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>2024 copyright @ chandana <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </section>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        
+    // Submit to Google Forms
+    const form = document.getElementById('contact-form');
+const responseMessage = document.getElementById('form-response-message');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSeuyKSJn7xfyu16QHPrqZyQKeG7-5S8WQlLt8y4VpvqQ9M92A/formResponse', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+    })
+    .then(() => {
+        responseMessage.textContent = 'Message Submitted Successfully';
+        responseMessage.style.display = 'block';
+        form.reset();
+    })
+    .catch((error) => {
+        responseMessage.textContent = 'There was a problem with submitting your message.';
+        responseMessage.style.display = 'block';
+    });
+});
+
+
+</script>
+</body>
+</html>
