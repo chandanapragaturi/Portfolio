@@ -6,6 +6,21 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a2241f00bb.js" crossorigin="anonymous"></script>
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Add some basic styles for the hidden section */
+        #customer-retention {
+            display: none; /* Initially hidden */
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header id="header">
@@ -13,11 +28,11 @@
             <nav>
                 <img src="photos/logo1.jpeg" class="logo" alt="Logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-circle-xmark"></i>
                 </ul>
                 <i class="fa-solid fa-bars"></i>
@@ -37,7 +52,8 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>A motivated Data Science Fresher looking to leverage my strong programming skills in Python, Java, and C, analytical aptitude. A punctual and hardworking student, very interested in learning new things and researching further into unknown information. Looking forward to adapting and learning from training in the new environment, meeting new friends, and working together with them as a team.</p>
+                    <p>Hello! I'm Chandana Reddy, a third-year B.Tech student specializing in Computer Science Engineering with a focus on Data Science at CMR Institute of Technology, Hyderabad. I have a strong passion for data analysis and have developed skills in Python, SQL, and data visualization tools. My goal is to leverage data to uncover insights and drive decision-making processes.
+                    Through projects, I have gained hands-on experience in statistical analysis and creating dashboards. I am eager to continue learning and collaborating on impactful data-driven projects.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -45,23 +61,22 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing web/App interfaces</li>
-                            <li><span>Data Analyst</span><br>Data Visualization</li>
-                            <li><span>Computer Skills</span><br>Computer Skills</li>
+                            <li><span>Data Visualization</span><br>Tableau, Power BI,Weka for data mining</li>
+                            <li><span>Programming Languages</span><br>C, Python, Java, SQL</li>
+                            <li><span>Computer Skills</span><br>Typing, Presentation Skills, Microsoft Excel, Google Sheets</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2024-Current</span><br>Intern at Pyramid Training</li>
-                            <li><span>2023-2024</span><br>Intern at Infosys</li>
-                            <li><span>2023-2024</span><br>Intern at Amazon</li>
+                            <li><span>Gained hands-on experience in analytical skills using Power BI, with a focus on data interpretation and strategic insights for business improvement, and making effective dashboards.</span><br>Virtual Internship - Power BI Job Simulation</li>
+                            <li><span>Experience in interpreting trends and making decisions, effective data visualization techniques.</span><br>Virtual Internship - Data Analytics and Visualization Job Simulation</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Currently-2024</span><br>B-Tech at CMRIT, Hyderabad</li>
-                            <li><span>Intermediate-2022</span><br>Prathibha Junior College, MBNR</li>
-                            <li><span>SSC-2020</span><br>Akshara Concept High School, Jadcherla</li>
+                            <li><span>Currently pursuing 3rd year-2024</span><br>B-Tech at CMRIT, Hyderabad</li>
+                            <li><span>Intermediate-2022 with aggregate of 97%</span><br>Prathibha Junior College, MBNR</li>
+                            <li><span>SSC-2020 with aggregate of 100%</span><br>Akshara Concept High School, Jadcherla</li>
                         </ul>
                     </div>
                 </div>
@@ -76,20 +91,17 @@
                 <div class="service-item"> 
                     <i class="fa-solid fa-code"></i>
                     <h2>Data Analysis</h2>
-                    <p>Providing insights through data visualization, statistical analysis, and reporting</p>
-                    <a href="#">Learn More</a>
+                    <p>Providing insights through data visualization, statistical analysis, and reporting.</p>
                 </div>
                 <div class="service-item"> 
                     <i class="fa-solid fa-crop"></i>
                     <h2>Web Development</h2>
-                    <p>Designing and developing scalable web applications using the latest technologies</p>
-                    <a href="#">Learn More</a>
+                    <p>Designing and developing scalable web applications using the latest technologies.</p>
                 </div>
                 <div class="service-item"> 
                     <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>Consulting</h2>
-                    <p>Offering consulting services for data-driven decision-making and process optimization</p>
-                    <a href="#">Learn More</a>
+                    <h2>Data Management</h2>
+                    <p>Organizing and maintaining data systems to support efficient data usage across the organization.</p>
                 </div>
             </div>
         </div>
@@ -102,29 +114,37 @@
                 <div class="work" onclick="toggleColor(this)">
                     <img src="photos/work1.jpeg" alt="Work 1">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>A social media app involving front-end and back-end development with considerations for user experience and data security.</p>
+                        <h3>QR Code Generator - Website</h3>
+                        <p>The QR Code Generator project typically involves creating a web or mobile application that allows users to generate QR codes based on input data.</p>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work" onclick="toggleColor(this)">
                     <img src="photos/work2.jpeg" alt="Work 2">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>A social media app involving front-end and back-end development with considerations for user experience and data security.</p>
+                        <h3>Diversity & Inclusion Metrics Dashboard</h3>
+                        <p>This reflects the focus on gender balance in the executive suite and the analytical nature of your work. It demonstrates your ability to analyze data and present it in a meaningful way, focusing on diversity and inclusion metrics such as hiring rates, promotion rates, and performance metrics.</p>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work center-item" onclick="toggleColor(this)">
                     <img src="photos/work-3.jpeg" alt="Work 3">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>A social media app involving front-end and back-end development with considerations for user experience and data security.</p>
+                        <h3>CodeHub - Website (Working on)</h3>
+                        <p>CodeHub is essentially an integrated platform that brings together various coding learning resources and tools. It combines features from multiple coding platforms, providing users with access to tutorials. This unified approach aims to streamline the learning process and enhance collaboration among developers.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleColor(this)">
+                    <img src="photos/retention.jpeg" alt="Work 4">
+                    <div class="layer">
+                        <h3>Customer retention-Dashboard</h3>
+                        <p>In this project, I have crafted Power BI dashboard for a emphasizing customer retention strategies. By delivering visually compelling insights, the dashboards aim to empower informed decision-making, fostering a holistic understanding of key metrics and actionable recommendations.</p>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <a href="#" class="btn" id="see-more-btn">See More</a>
         </div>
     </section>
     
@@ -138,9 +158,9 @@
                     <div class="social-icons">
                         <a href="https://www.instagram.com/reels/C_QjfVESqKA/?next=%2F" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                         <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/CodeWithHarry" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://github.com/chandanapragaturi" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                     </div>
-                    <a href="photos/chandana resume(perfect).pdf" download class="btn btn2">Download Resume</a>
+                    <a href="photos/chandana_reddy_resume(10-04).pdf" download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="contact-right">
                     <form id="contact-form">
@@ -150,7 +170,6 @@
                         <button type="submit" class="btn btn2">Submit</button>
                         <p id="form-response-message" style="color: green; font-weight: bold; display: none;"></p>
                     </form>
-                    
                 </div>
             </div>
         </div>
@@ -174,32 +193,44 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
-        
-    // Submit to Google Forms
-    const form = document.getElementById('contact-form');
-const responseMessage = document.getElementById('form-response-message');
+        // Show customer retention section when "See More" is clicked
+        document.getElementById('see-more-btn').addEventListener('click', function() {
+            const customerRetention = document.getElementById('customer-retention');
+            customerRetention.style.display = customerRetention.style.display === 'none' ? 'block' : 'none';
+        });
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const formData = new FormData(form);
+        // Submit to Google Forms
+        const form = document.getElementById('contact-form');
+        const responseMessage = document.getElementById('form-response-message');
 
-    fetch('https://docs.google.com/forms/d/e/1FAIpQLSeuyKSJn7xfyu16QHPrqZyQKeG7-5S8WQlLt8y4VpvqQ9M92A/formResponse', {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors'
-    })
-    .then(() => {
-        responseMessage.textContent = 'Message Submitted Successfully';
-        responseMessage.style.display = 'block';
-        form.reset();
-    })
-    .catch((error) => {
-        responseMessage.textContent = 'There was a problem with submitting your message.';
-        responseMessage.style.display = 'block';
-    });
-});
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
 
+            fetch('https://docs.google.com/forms/d/e/1FAIpQLSeuyKSJn7xfyu16QHPrqZyQKeG7-5S8WQlLt8y4VpvqQ9M92A/formResponse', {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            })
+            .then(() => {
+                responseMessage.textContent = 'Message Submitted Successfully';
+                responseMessage.style.display = 'block';
+                form.reset();
+            })
+            .catch((error) => {
+                responseMessage.textContent = 'There was a problem with submitting your message.';
+                responseMessage.style.display = 'block';
+            });
+        });
+    </script>
+     <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger-icon');
+        const navItems = document.getElementById('nav-items');
 
-</script>
+        hamburger.addEventListener('click', () => {
+            navItems.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
