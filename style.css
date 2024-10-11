@@ -17,10 +17,44 @@ body {
   background-size: cover;
   background-position: center;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .container {
   padding: 10px 10%;
 }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        /* Hamburger menu styles */
+        .hamburger {
+            display: none; /* Hidden by default */
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block; /* Show on smaller screens */
+            }
+
+            nav ul {
+                display: none; /* Hide navigation by default */
+                flex-direction: column; /* Stack items */
+            }
+
+            nav ul.show {
+                display: flex; /* Show when active */
+            }
+        }
+
 
 nav {
   display: flex;
@@ -37,7 +71,12 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+
 }
+.nav-hidden {
+  display:flex;
+}
+
 
 nav ul li a {
   color: #fff;
@@ -92,7 +131,7 @@ nav ul li a:hover::after {
 
 .about-col-1 img {
   width: 100%;
-  border: 15px solid #fff;
+  border: 5px solid #fff;
 }
 
 .about-col-2 {
@@ -254,6 +293,33 @@ nav ul li a:hover::after {
   width: 100%;
   border-radius: 10px;
   display: block;
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line */
+  justify-content: center; /* Centers the items */
+}
+
+.work {
+  flex: 1 1 400px; /* Flex-grow, flex-shrink, flex-basis */
+  max-width: 400px; /* Limit the width of each item */
+  margin: 10px; /* Add some spacing between items */
+  position: relative; /* For proper positioning of the overlay */
+}
+
+.center-item {
+  flex: 0 0 400px; /* Make the center item larger */
+  max-width: 400px; /* Limit the max width */
+}
+
+.layer {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Overlay layer for the work item */
