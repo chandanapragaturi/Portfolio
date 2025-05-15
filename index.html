@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Chandana's  Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a2241f00bb.js" crossorigin="anonymous"></script>
     <style>
@@ -38,7 +38,7 @@
                 <i class="fa-solid fa-bars"></i>
             </nav>
             <div class="header-text">
-                <p>Data Analyst</p>
+                
                 <h1>Hi, I'm <span>Chandana Reddy</span><br>From Telangana</h1>
             </div>
         </div>
@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="photos/background1.jpeg.jpg" alt="About Image">
+                    <img src="photos/background1.jpg" alt="About Image">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -112,39 +112,44 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work" onclick="toggleColor(this)">
-                    <img src="photos/work1.jpeg" alt="Work 1">
+                    
                     <div class="layer">
                         <h3>COVID-19 Analysis using Power BI</h3>
                         <p>Visualized COVID-19 data trends, including infection rates, recoveries, and fatalities, to provide actionable insights using Power BI dashboards.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/chandanapragaturi/Covid-19-Analysis" target="_blank"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
+                
                 <div class="work" onclick="toggleColor(this)">
-                    <img src="photos/work2.jpeg" alt="Work 2">
+                    
                     <div class="layer">
                         <h3>Finance Report using Power BI</h3>
                         <p>Designed interactive financial dashboards to track expenses, revenue, and key financial metrics for improved decision-making.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/yourusername/finance-report" target="_blank"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
-                <div class="work center-item" onclick="toggleColor(this)">
-                    <img src="photos/work-3.jpeg" alt="Work 3">
+                
+                <div class="work" onclick="toggleColor(this)">
+                    
                     <div class="layer">
                         <h3>Hot Trends in Streaming Text Data using Sequential Evaluation (ML)</h3>
                         <p>Developed a machine learning model to analyze and predict trending topics in streaming text data using sequential evaluation techniques.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/yourusername/hot-trends-ml" target="_blank"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
+                
                 <div class="work" onclick="toggleColor(this)">
-                    <img src="photos/retention.jpeg" alt="Work 4">
+                    
                     <div class="layer">
                         <h3>Stock Price Prediction using LSTM and ANM</h3>
                         <p>Built a predictive model leveraging LSTM and ANM to forecast stock prices with improved accuracy by capturing time series patterns.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/yourusername/stock-prediction" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn" id="see-more-btn">See More</a>
         </div>
     </section>
     
@@ -153,14 +158,14 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:Chandanapragaturi@gmail.com">Chandanapragaturi@gmail.com</a></p>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:chandanapragaturi@gmail.com">chandanapragaturi@gmail.com</a></p>
                     <p><i class="fa-solid fa-address-book"></i><a href="tel:+9000656248">9000656248</a></p>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/reels/C_QjfVESqKA/?next=%2F" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                         <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/chandanapragaturi" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                     </div>
-                    <a href="photos/chandana_reddy_resume(10-04).pdf" download class="btn btn2">Download Resume</a>
+                    <a href="photos/chandana resume.pdf" download class="btn btn2">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -183,12 +188,6 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-
-        // Show customer retention section when "See More" is clicked
-        document.getElementById('see-more-btn').addEventListener('click', function() {
-            const customerRetention = document.getElementById('customer-retention');
-            customerRetention.style.display = customerRetention.style.display === 'none' ? 'block' : 'none';
-        });
 
         // Submit to Google Forms
         const form = document.getElementById('contact-form');
